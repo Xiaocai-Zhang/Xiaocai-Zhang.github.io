@@ -420,9 +420,16 @@ header {
 	}
 }
 .sidenav h1 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.35em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.15em;
     line-height: 1.75em;
+    margin-top: 1em;
+    font-weight: 400;
+}
+.sidenav p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.45em;
+    line-height: 1.05em;
     margin-top: 1em;
     font-weight: 400;
 }
