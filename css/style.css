@@ -515,6 +515,13 @@ h2.w3_head, h3.w3_head {
     letter-spacing: 0.075em;
     line-height: 1.35em;
 }
+h4.w3_head {
+    font-weight: 400;
+    color: #787878;
+    font-size: 1.3em;
+    letter-spacing: 0.075em;
+    line-height: 1.35em;
+}
 p.main_p {
     font-size: 1.4em;
     line-height: 1.8em;
@@ -1169,6 +1176,43 @@ section.slide-wrapper {
 .sidenav h1 {
     margin-bottom: 1em;
 }
+}
+.main a {
+    color: #999;
+    text-decoration: underline;
+}
+.main a:hover {
+    color: #3399ff;
+    text-decoration: underline;
+}
+.sidenav a{
+    color: #999;
+}
+.sidenav a:hover {
+    color: #3399ff;
+    text-decoration: underline;
+}
+.mainlink{
+    color: #999;
+    margin-left: 1em;
+}
+.main ul {
+    list-style-type: disc;
+}
+.sublink{
+    color: #999;
+    margin-left: 2em;
+}
+.publi{
+    color: #999;
+    font-size: 17px;
+    
+}
+.publi li{
+    margin: 8px 0;
+}
+#news{
+    font-size: 17px;
 }
 
 
