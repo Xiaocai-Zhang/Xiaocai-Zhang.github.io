@@ -1,85 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Deep Learning Tutorial</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <!-- <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
-                    </div>
+<html lang="zxx">
+<head>
+    <title>Xiaocai Zhang - Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+<body>
+    <div class="sidenav">
+		<div class="side_top">
+			<img src="images/face.jpg" alt="news image" class="img-fluid navimg">
+			<p>Xiaocai Zhang</p>
+			<h1> Research Scientist <br>Institute of High Performance Computing <br>Agency for Science, Technology and Research (A*STAR), Singapore 138632</h1>
+			<h1>Email: <a href="mailto:zhang_xiaocai@ihpc.a-star.edu.sg">zhang_xiaocai@ihpc.a-star.edu.sg</a></h1>
+		</div>
+		<!-- header -->
+		<header>
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							<li class="active"><a href="#home">Home</a></li>
+							<li class="mt-sm-3"><a href="#news" class="scroll">News</a></li>
+							<li class="mt-sm-3"><a href="#publication" class="scroll">Publications</a></li>
+							<li class="mt-sm-3"><a href="#research" class="scroll">Research</a></li>
+							<li class="mt-sm-3"><a href="#services" class="scroll">Services</a></li>
+                        </ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+    <div class="main" id="home">
+        <div class="banner-text-w3ls">
+            <div class="container">
+                <div class="mx-auto text-left">
+                    <h2>ABOUT ME</h2>
+					<p class="banp mt-5">Dr. Xiaocai Zhang is currently a Research Scientist at the Institute of High Performance Computing, <a href="https://www.a-star.edu.sg/" target="_blank">Agency for Science, Tachnology and Research (A*STAR)<a>, Singapore. He receieved his B.E. and M.E. degrees in Traffic & Transport Enginerring both at the College of Navigation, <a href="https://english.dlmu.edu.cn/" target="_blank">Dalian Maritime University (DMU)<a>, China, in 2013 and 2016, respectively, and then his Ph.D. degree in Computer Science at the <a href="https://www.uts.edu.au/research-and-teaching/our-research/advanced-analytics-institute" target="_blank">Advanced Analytics Institute</a>, Faculty of Engineering and Information Technology, <a href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney (UTS)<a>, Australia, in 2021. From Feb. 2019 to Dec. 2020, he worked at the <a href="https://www.uts.edu.au/data-science-institute" target="_blank">Data Science Institute<a> of UTS, as a casual Research Assistant with <a href="https://profiles.uts.edu.au/Yang.Wang" target="_blank">A/Prof. Yang Wang<a> and <a href="https://profiles.uts.edu.au/Fang.Chen" target="_blank">Prof. Fang Chen<a>. His current research foucuses on time-sereis analysis, spatio-temporal mining for transport networks, deep-learning based intelligent transport systems, etc.</p>
+					</br>
+					<div class='mainlink'>
+						<ul>
+						  <li><a href="https://scholar.google.com.au/citations?user=bTIA0fQAAAAJ&hl=en" target="_blank">Google Scholar<a></li>
+						</ul>
+					</div>
+						
                 </div>
-            </form> -->
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-file-alt fa-lg"></i></div>
-                                Reference
-                            </a>
-                            <a class="nav-link" href="handout.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-video fa-lg"></i></div>
-                                Slide
-                            </a>
-                            
-						</div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid">
-                        <h1 class="mt-4">References</h1>
-					</div>
-				</br>
-					<div class="container-fluid">
-						<ol style="line-height:125%">
-							<li>Yisheng Lv, Yanjie Duan, Wenwen Kang, Zhengxi Li, and Fei-Yue Wang. "Traffic flow prediction with big data: a deep learning approach." IEEE Transactions on Intelligent Transportation Systems 16, no. 2 (2014): 865-873.</li></br>
-							<li>Pengfei Chen, Xuandi Fu, and Xue Wang. "A Graph Convolutional Stacked Bidirectional Unidirectional-LSTM Neural Network for Metro Ridership Prediction." IEEE Transactions on Intelligent Transportation Systems (2021).</li></br>
-							<li>Simoncini, Matteo, Leonardo Taccari, Francesco Sambo, Luca Bravi, Samuele Salti, and Alessandro Lori. "Vehicle classification from low-frequency GPS data with recurrent neural networks." Transportation Research Part C: Emerging Technologies 91 (2018): 176-191.</li></br>
-							<li>Xiaocai Zhang, Yi Zheng, Zhixun Zhao, Yuansheng Liu, Michael Blumenstein and Jinyan Li. "Deep learning detection of anomalous patterns from bus trajectories for traffic insight analysis." Knowledge-Based Systems 217 (2021): 106833.</li></br>
-							<li>Hua Wei, Guanjie Zheng, Huaxiu Yao, and Zhenhui Li. "Intellilight: A reinforcement learning approach for intelligent traffic light control." In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp. 2496-2505. 2018.</li></br>
-							<li>Jitian Wang, Han Zheng, Yue Huang, and Xinghao Ding. "Vehicle type recognition in surveillance images from labeled web-nature data using deep transfer learning." IEEE Transactions on Intelligent Transportation Systems 19, no. 9 (2017): 2913-2922.</li></br>													
-							<li>HaiLong Liu, Tadahiro Taniguchi, Yusuke Tanaka, Kazuhito Takenaka, and Takashi Bando. "Visualization of driving behavior based on hidden feature extraction by using deep learning." IEEE Transactions on Intelligent Transportation Systems 18, no. 9 (2017): 2477-2489.</li></br>
-							<li>Toon Bogaerts, Antonio D. Masegosa, Juan S. Angarita-Zapata, Enrique Onieva, and Peter Hellinckx. "A graph CNN-LSTM neural network for short and long-term traffic forecasting based on trajectory data." Transportation Research Part C: Emerging Technologies 112 (2020): 62-77.</li></br>
-							<li>Wenhao Huang, Guojie Song, Haikun Hong, and Kunqing Xie. "Deep architecture for traffic flow prediction: deep belief networks with multitask learning." IEEE Transactions on Intelligent Transportation Systems 15, no. 5 (2014): 2191-2201.</li></br>
-							<li>Senzhang Wang, Jiannong Cao, and Philip Yu. "Deep learning for spatio-temporal data mining: A survey." IEEE Transactions on Knowledge and Data Engineering (2020).</li></br>
-							<li>Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. "Deep learning." Nature 521, no. 7553 (2015): 436-444.</li></br>
-						</ol>
-					</div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Xiaocai Zhang 2021</div>
-                        </div>
-                    </div>
-                </footer>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
-    </body>
+	
+	<!-- //news -->
+    <section class="gallery" id="news">
+        <div class="container py-lg-12">
+           <h3 class="w3_head mb-5">NEWS</h3>
+				<div class='sublink'>
+					<ul>
+					  <li><b>04/2021</b>&nbsp;&nbsp;&nbsp;&nbsp;Congratuations, our paper about deep learning on urban traffic flow prediction was accepted by IEEE Transactions on Intelligent Transportation Systems (Q1, IF: 6.319).</li>
+					  <li><b>03/2021</b>&nbsp;&nbsp;&nbsp;&nbsp;I was relocated from UTS, Australia to A*STAR, Singapore.</li>
+					  <li><b>02/2021</b>&nbsp;&nbsp;&nbsp;&nbsp;Congratuations, one paper entitled <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705121000964" target="_blank">"Deep learning detection of anomalous patterns from bus trajectories for traffic insight analysis"<a> was accepted to Knowledge-Based Systems (Q1, IF: 5.921). </li>
+					  <li><b>01/2021</b>&nbsp;&nbsp;&nbsp;&nbsp;I has today been adimitted to the degree of Doctor of Philosophy.</li>
+					  <li><b>10/2020</b>&nbsp;&nbsp;&nbsp;&nbsp;Congratuations, our paper <a href="https://academic-oup-com.ezproxy.lib.uts.edu.au/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa915/5942078" target="_blank">"Minirmd: accurate and fast duplicate removal tool for short reads via multiple minimizers"<a> has been accpeted by Bioinformatics (Q1, IF: 5.610).</li>
+					</ul>
+				</div>
+        </div>
+    </section>
+	
+	<!-- //publication --> 
+    <section class="slide-wrapper" id="publication">
+        <div class="container py-lg-12">
+           <h3 class="w3_head mb-1">PUBLICATIONS</h3>
+  		   <h4 class="w3_head mt-4 mb-3">Conference Papers</h4>
+		   <div class='publi'>
+			   <ol>
+			   <li><b>Xiaocai Zhang</b>, Xuan Zhang, Sunny Verma, Yuansheng Liu, Michael Blumenstein and Jinyan Li. "Detection of anomalous traffic patterns and insight analysis from bus trajectory data." In Pacific Rim International Conference on Artificial Intelligence (<b>PRICAI 2019</b>), pp. 307-321, 2019.</li>
+			   <li><b>Xiaocai Zhang</b>, Yuansheng Liu, Yi Zheng, Zhixun Zhao, Jinyan Li and Yang Liu. "Distinction Between Ships and Icebergs in SAR Images Using Ensemble Loss Trained Convolutional Neural Networks." In Australasian Joint Conference on Artificial Intelligence (<b>AI 2018</b>), pp. 216-223, 2018.</li>
+			   <li>Yi Zheng, Hui Peng, <b>Xiaocai Zhang</b>, Xiaoying Gao and Jinyan Li. "Predicting drug targets from heterogeneous spaces using anchor graph hashing and ensemble learning." In 2018 International Joint Conference on Neural Networks (<b>IJCNN 2018</b>), pp. 1-7, 2018.</li>   
+			   </ol>
+			</div>
+  			<h4 class="w3_head mt-4 mb-3">Journal Papers</h4>
+		    <div class='publi'>
+				<ol>
+					<li><b>Xiaocai Zhang</b>, Zhixun Zhao and Jinyan Li. "Differential evolution based LSTM recurrent neural network: A deep learning approach for traffic flow prediction." IEEE Transactions on Intelligent Transportation Systems, (2021). Accepted. (<b>IF: 6.319</b>)</li>
+					<li><b>Xiaocai Zhang</b>, Yi Zheng, Zhixun Zhao, Yuansheng Liu, Michael Blumenstein and Jinyan Li. "Deep learning detection of anomalous patterns from bus trajectories for traffic insight analysis." Knowledge-Based Systems 217 (2021): 106833. (<b>IF: 5.921</b>)</li>
+					<li>Yuansheng Liu, <b>Xiaocai Zhang</b>, Quan Zou and Xiangxiang Zeng. "Minirmd: accurate and fast duplicate removal tool for short reads via multiple minimizers." Bioinformatics (2020). (<b>IF: 5.610</b>)</li>
+					<li><b>Xiaocai Zhang</b>, Zhixun Zhao, Yi Zheng and Jinyan Li. "Prediction of taxi destinations using a novel data embedding method and ensemble learning." IEEE Transactions on Intelligent Transportation Systems 21, no. 1 (2020): 68-78. (<b>IF: 6.319, ESI Highly Cited Paper, ESI Hot Paper</b>)</li>
+					<li>Zhixun Zhao, <b>Xiaocai Zhang</b>, Fang Chen, Liang Fang and Jinyan Li. "Accurate prediction of DNA N 4-methylcytosine sites via boost-learning various types of sequence features." BMC Genomics 21, no. 1 (2020): 1-11. (<b>IF: 3.594</b>)</li>
+					<li>Yi Zheng, Hui Peng, <b>Xiaocai Zhang</b>, Zhixun Zhao, Xiaoying Gao and Jinyan Li. "DDI-PULearn: a positive-unlabeled learning method for large-scale prediction of drug-drug interactions." BMC Bioinformatics 20, no. 19 (2019): 1-12. (<b>IF: 3.242</b>)</li>
+					<li>Yi Zheng, Hui Peng, <b>Xiaocai Zhang</b>, Zhixun Zhao, Xiaoying Gao and Jinyan Li. "Old drug repositioning and new drug discovery through similarity learning from drug-target joint feature spaces." BMC Bioinformatics 20, no. 23 (2019): 1-9. (<b>IF: 3.242</b>)</li>
+					<li>Yi Zheng, Hui Peng, <b>Xiaocai Zhang</b>, Zhixun Zhao, Jie Yin and Jinyan Li. "Predicting adverse drug reactions of combined medication from heterogeneous pharmacologic databases." BMC Bioinformatics 19, no. 19 (2018): 49-59. (<b>IF: 3.242</b>)</li>						
+					<li>Zhixun Zhao, Hui Peng, <b>Xiaocai Zhang</b>, Yi Zheng, Fang Chen, Liang Fang and Jinyan Li. "Identification of lung cancer gene markers through kernel maximum mean discrepancy and information entropy." BMC Medical Genomics 12, no. 8 (2019): 1-10. (<b>IF: 2.570</b>)</li>	
+				</ol>	
+			</div>
+        </div>
+    </section>
+	
+	<!-- //research --> 
+    <section class="gallery" id="research">
+        <div class="container py-lg-12">
+           <h3 class="w3_head mb-5">RESEARCH</h3>
+			 TAB
+        </div>
+    </section>
+	
+	<!-- //service --> 
+    <section class="slide-wrapper" id="services">
+        <div class="container py-lg-5">
+           <h3 class="w3_head mb-5">SERVICES</h3>
+			<div class='sublink'>
+				<ul>
+				  <li>Reviewer, IET Intelligent Transport Systems, 2020 and 2021</li>
+				  <li>Subreviewer, Expert Systems with Applications, 2021.</li>
+				  <li>Reviewer, Scientific Reports, 2020.</li>
+				  <li>Reviewer, IEEE Transactions on Mobile Computing, 2020.</li>
+				  <li>Reviewer, IEEE Transactions on Intelligent Transportation Systems, 2018, 2019 and 2020.</li>
+				  <li>Subreviewer, IEEE Journal of Biomedical and Health Informatics, 2019.</li>
+				  <li>Subreviewer, The 21st IEEE International Conference on Intelligent Transportation Systems, 2018.</li>
+				</ul>
+			</div>
+        </div>
+    </section>
+	
+    </div>
+
+</body>
 </html>
